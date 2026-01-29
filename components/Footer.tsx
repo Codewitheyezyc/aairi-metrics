@@ -10,13 +10,13 @@ const Footer = () => {
             <Link href="/">
               <Image
                 src="/aairi-icon.png"
-                width={100}
-                height={100}
+                width={60}
+                height={60}
                 alt="Aairi Logo"
               />
             </Link>
           </div>
-          <ul className="flex items-center space-x-5 text-slate-900/70 text-xs md:text-sm">
+          <ul className="flex items-center space-x-2 lg:space-x-5 text-slate-900/70 text-xs md:text-sm">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -34,7 +34,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-between px-4 pb-8 mt-8 text-sm text-gray-400">
+        <div className="flex items-center justify-between px-4 pb-8 mt-8 text-xs text-gray-400">
           <p className="">&copy;2026, All right reserved</p>
           <p className="">Aairi Metrics Consulting Company</p>
         </div>

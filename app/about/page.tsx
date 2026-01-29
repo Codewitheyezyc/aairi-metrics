@@ -31,11 +31,11 @@ const page = () => {
       <SectionContainer className="">
         <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2  items-center gap-20">
           <Reveal direction="up" delay={150}>
-            <div className="">
+            <div className="text-sm lg:text-lg">
               <h2 className="text-4xl md:text-5xl font-medium mb-6">
                 Who we are
               </h2>
-              <p className="text-lg">
+              <p className="">
                 Aairi-Metrics is a professional MERL consulting firm providing
                 monitoring, evaluation, research, and learning services to
                 development partners, governments, non-governmental
@@ -59,7 +59,7 @@ const page = () => {
           </Reveal>
           <div className="md:col-span-2 self-start">
             <Reveal direction="up" delay={150}>
-              <p className="mb-6 text-lg">
+              <p className="mb-6 ">
                 Our work focuses on helping organizations generate credible
                 evidence and use it meaningfully to strengthen programs, improve
                 accountability, and support informed decision-making. We deliver
@@ -72,7 +72,7 @@ const page = () => {
               </p>
             </Reveal>
             <Reveal direction="up" delay={150}>
-              <p className="text-lg">
+              <p className="">
                 Our research and evaluation work draws on both quantitative and
                 qualitative methods, including surveys, key informant
                 interviews, focus group discussions, case studies, and
@@ -102,7 +102,7 @@ const page = () => {
             </Reveal>
           </div>
           <Reveal direction="up" delay={150}>
-            <p className="text-lg">
+            <p className="">
               Our outputs are designed to be practical and usable from
               monitoring reports and evaluation findings to learning briefs and
               management summaries that speak directly to program teams and
@@ -120,8 +120,8 @@ const page = () => {
           </Reveal>
         </div>
 
-        <div className="text-center mt-10 md:mt-36 bg-[#0a2540] text-slate-200 p-2 md:p-6 rounded-2xl">
-          <h3 className="text-lg md:text-2xl mb-4 font-medium">
+        <div className="text-center mt-10 md:mt-36 bg-[#0a2540] text-slate-200 px-2 py-4 md:p-6 rounded-2xl">
+          <h3 className="text-sm md:text-2xl mb-4 font-medium">
             Our Commitment
           </h3>
           <div className="flex items-center justify-center space-x-10 mt-6 ">

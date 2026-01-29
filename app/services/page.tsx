@@ -2,7 +2,6 @@ import Banner from "@/components/Banner";
 import Reveal from "@/components/Reveal";
 import SectionContainer from "@/components/SectionContainer";
 import { servicesPage } from "@/constants";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export const metadata = {

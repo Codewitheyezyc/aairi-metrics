@@ -11,17 +11,15 @@ import Link from "next/link";
 const About = () => {
   return (
     <SectionContainer className="bg-[#ebf8fe]/20">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-20 md:gap-32 lg:gap-40">
-        <div className="">
-          <Image
-            src="/about-img.png"
-            width={1000}
-            height={1000}
-            alt="About image"
-            quality={80}
-            className=" object-cover rounded-4xl"
-          />
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-10 md:gap-32 lg:gap-40">
+        <Image
+          src="/about-img.png"
+          width={1000}
+          height={1000}
+          alt="About image"
+          quality={80}
+          className="object-cover rounded-4xl"
+        />
 
         <div className=" mt-12">
           <Reveal direction="up" delay={150}>

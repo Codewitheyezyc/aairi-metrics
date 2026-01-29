@@ -16,12 +16,12 @@ const Projects = () => {
         <h2 className="text-2xl md:text-3xl lg:text-5xl mb-4 font-semibold text-center ">
           Our Works
         </h2>
-        <div className=" my-20">
+        <div className="mt-10 mb-20">
           {projects.map((card, index) => (
             <Reveal direction="up" delay={index * 150} key={index}>
               <div
                 key={index}
-                className={`grid grid-cols-1 md:grid-cols-2 items-center gap-24 ${index == 1 ? "mt-20 bg-[#02070d] text-slate-200 p-10 rounded-4xl" : "bg-[#38bdf8]  p-10 rounded-4xl"}`}
+                className={`grid grid-cols-1 md:grid-cols-2 items-center gap-12 lg:gap-24 ${index == 1 ? "mt-20 bg-[#02070d] text-slate-200 p-6 lg:p-10 rounded-4xl" : "bg-[#38bdf8] p-6 lg:p-10 rounded-4xl"}`}
               >
                 <div className="">
                   <Image

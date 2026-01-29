@@ -30,7 +30,7 @@ const Services = () => {
         </div>
       </Reveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4 mt-10  items-center px-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4 mt-10  items-center px-1">
         {services.map((item, index) => {
           const Icon = item.icon;
           return (
@@ -38,7 +38,7 @@ const Services = () => {
               <Link href="/services">
                 <div
                   key={index}
-                  className={`bg-slate-100 p-6  rounded-2xl justify-self-center text-slate-950 text-center w-[70%] ${item.position === "left" ? "md:justify-self-end" : "md:justify-self-start"} `}
+                  className={`bg-slate-100 p-6  rounded-2xl justify-self-center text-slate-950 text-center w-[90%] md:-[70%] ${item.position === "left" ? "md:justify-self-end" : "md:justify-self-start"} `}
                 >
                   <div className="flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-[#38bdf8]" />

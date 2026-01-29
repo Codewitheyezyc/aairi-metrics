@@ -11,7 +11,7 @@ const Gallery = () => {
           GALLERY
         </h3>
       </Reveal>
-      <div className="relative grid grid-cols-2  md:grid-cols-4  gap-3">
+      <div className="relative grid grid-cols-2  md:grid-cols-4  gap-1">
         {gallery.map((img, index) => (
           <Reveal key={index} direction="up" delay={index * 150}>
             <div className="">
