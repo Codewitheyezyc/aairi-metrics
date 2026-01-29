@@ -47,14 +47,6 @@ const page = () => {
                     <p className="mb-8 text-sm lg:text-lg  text-[#030b13]">
                       {item.description}
                     </p>
-                    <button className="flex items-center space-x-4">
-                      <span className="font-medium text-sm lg:text-[16px]">
-                        Learn More
-                      </span>
-                      <div className="bg-slate-900 w-5.5 h-5.5 lg:w-7 lg:h-7 rounded-full p-1 text-slate-200">
-                        <ArrowRight className="w-full h-full " />
-                      </div>
-                    </button>
                   </div>
                 </div>
               </Reveal>

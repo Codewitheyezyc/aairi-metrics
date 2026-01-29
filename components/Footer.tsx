@@ -10,13 +10,13 @@ const Footer = () => {
             <Link href="/">
               <Image
                 src="/aairi-icon.png"
-                width={50}
-                height={50}
+                width={100}
+                height={100}
                 alt="Aairi Logo"
               />
             </Link>
           </div>
-          <ul className="flex items-center space-x-5 text-slate-900/70">
+          <ul className="flex items-center space-x-5 text-slate-900/70 text-xs md:text-sm">
             <li>
               <Link href="/">Home</Link>
             </li>
