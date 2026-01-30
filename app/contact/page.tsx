@@ -26,7 +26,8 @@ const ContactPage: React.FC = () => {
       message: "",
     } as FormProps,
     onSubmit: ({ value }) => {
-      alert(JSON.stringify(value, null, 2));
+      console.log(value);
+      // alert(JSON.stringify(value, null, 2));
     },
   });
 
