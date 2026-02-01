@@ -11,21 +11,10 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <Banner>
-        <div className="grid md:grid-cols-2 items-center gap-20 text-center ">
-          <div className="hidden md:block">
-            <Image
-              src="/hero-image-2.png"
-              width={2000}
-              height={2000}
-              alt="About Image"
-              className="rounded-2xl  "
-            />
-          </div>
-          <div className="">
-            <h1 className="text-4xl md:text-6xl  font-medium mb-4">Projects</h1>
-          </div>
-        </div>
+      <Banner variant="projects">
+        <h1 className="text-center text-5xl md:text-7xl  font-medium mb-4">
+          Explore Projects
+        </h1>
       </Banner>
       <SectionContainer className="px-12 py-20  text-slate-800">
         <div className=" flex flex-col items-center justify-center mt-12">

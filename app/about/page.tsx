@@ -12,21 +12,10 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <Banner>
-        <div className="grid md:grid-cols-2 items-center gap-20 text-center ">
-          <div className="hidden md:block">
-            <Image
-              src="/hero-image-2.png"
-              width={2000}
-              height={2000}
-              alt="About Image"
-              className="rounded-2xl  "
-            />
-          </div>
-          <div className="">
-            <h1 className="text-4xl md:text-6xl  font-medium mb-4">About Us</h1>
-          </div>
-        </div>
+      <Banner variant="about">
+        <h1 className="text-center text-5xl md:text-7xl  font-medium mb-4">
+          About Us
+        </h1>
       </Banner>
       <SectionContainer className="">
         <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2  items-center gap-20">

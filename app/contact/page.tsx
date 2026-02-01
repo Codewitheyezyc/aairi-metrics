@@ -6,7 +6,6 @@ import Reveal from "@/components/Reveal";
 import SectionContainer from "@/components/SectionContainer";
 import { contact } from "@/constants";
 import { useForm } from "@tanstack/react-form";
-import Image from "next/image";
 
 type FormProps = {
   name: string;
@@ -33,23 +32,10 @@ const ContactPage: React.FC = () => {
 
   return (
     <>
-      <Banner>
-        <div className="grid md:grid-cols-2 items-center gap-20 text-center ">
-          <div className="hidden md:block">
-            <Image
-              src="/hero-image-2.png"
-              width={2000}
-              height={2000}
-              alt="About Image"
-              className="rounded-2xl  "
-            />
-          </div>
-          <div className="">
-            <h1 className="text-4xl md:text-6xl  font-medium mb-4">
-              Contact Us
-            </h1>
-          </div>
-        </div>
+      <Banner variant="contact">
+        <h1 className="text-center text-5xl md:text-7xl  font-medium mb-4">
+          Contact Us
+        </h1>
       </Banner>
       <SectionContainer className="bg-[#d1e0ee]">
         <div className="w-full flex flex-col justify-center items-center">

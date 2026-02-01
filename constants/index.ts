@@ -25,6 +25,11 @@ import gallery12 from "@/public/gallery12.png";
 import gallery13 from "@/public/gallery13.png";
 import gallery14 from "@/public/gallery14.png";
 
+import aboutBanner from "@/public/about.png";
+import servicesBanner from "@/public/services.png";
+import projectsBanner from "@/public/project.png";
+import contactBanner from "@/public/Contact.png";
+
 export const navLinks = [
   {
     title: "Home",
@@ -159,7 +164,7 @@ export const commitment = [
     icon: BarChart3,
   },
   {
-    name: "Sound Evidence",
+    name: "Pratical Learning",
     icon: GraduationCap,
   },
 ];
@@ -246,3 +251,18 @@ export const gallery = [
     image: gallery14,
   },
 ];
+
+export const bannerConfig = {
+  about: {
+    img: aboutBanner,
+  },
+  services: {
+    img: servicesBanner,
+  },
+  projects: {
+    img: projectsBanner,
+  },
+  contact: {
+    img: contactBanner,
+  },
+};

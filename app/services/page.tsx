@@ -2,7 +2,6 @@ import Banner from "@/components/Banner";
 import Reveal from "@/components/Reveal";
 import SectionContainer from "@/components/SectionContainer";
 import { servicesPage } from "@/constants";
-import Image from "next/image";
 
 export const metadata = {
   title: "Services",
@@ -11,23 +10,10 @@ export const metadata = {
 const page = () => {
   return (
     <div className="bg-[#ebf8fe]">
-      <Banner>
-        <div className="grid md:grid-cols-2 items-center gap-20 text-center ">
-          <div className="hidden md:block">
-            <Image
-              src="/hero-image-2.png"
-              width={2000}
-              height={2000}
-              alt="About Image"
-              className="rounded-2xl  "
-            />
-          </div>
-          <div className="">
-            <h1 className="text-4xl md:text-6xl  font-medium mb-4">
-              Our Services
-            </h1>
-          </div>
-        </div>
+      <Banner variant="services">
+        <h1 className="text-center text-5xl md:text-7xl  font-medium mb-4">
+          Our Services
+        </h1>
       </Banner>
       <SectionContainer>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8">
