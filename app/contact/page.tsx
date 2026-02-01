@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <Banner variant="contact">
-        <h1 className="text-center text-5xl md:text-7xl  font-medium mb-4">
+        <h1 className="flex items-center justify-center  h-full text-5xl md:text-7xl  font-medium mb-4">
           Contact Us
         </h1>
       </Banner>

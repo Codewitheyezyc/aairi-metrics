@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center justify-between px-4 pb-8 mt-8 text-xs text-gray-400">
           <p className="">&copy;2026, All right reserved</p>
-          <p className="">Aairi Metrics Consulting Company</p>
+          <p className="">Aairi Metrics Consulting Limited.</p>
         </div>
       </div>
     </footer>

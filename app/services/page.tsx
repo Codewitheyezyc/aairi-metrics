@@ -11,7 +11,7 @@ const page = () => {
   return (
     <div className="bg-[#ebf8fe]">
       <Banner variant="services">
-        <h1 className="text-center text-5xl md:text-7xl  font-medium mb-4">
+        <h1 className="flex items-center justify-center  h-full text-5xl md:text-7xl  font-medium mb-4">
           Our Services
         </h1>
       </Banner>

@@ -12,8 +12,8 @@ const page = () => {
   return (
     <>
       <Banner variant="projects">
-        <h1 className="text-center text-5xl md:text-7xl  font-medium mb-4">
-          Explore Projects
+        <h1 className="flex items-center justify-center  h-full text-5xl md:text-7xl  font-medium mb-4">
+          Our Projects
         </h1>
       </Banner>
       <SectionContainer className="px-12 py-20  text-slate-800">

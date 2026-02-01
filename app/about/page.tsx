@@ -13,7 +13,7 @@ const page = () => {
   return (
     <>
       <Banner variant="about">
-        <h1 className="text-center text-5xl md:text-7xl  font-medium mb-4">
+        <h1 className="flex items-center justify-center  h-full text-5xl md:text-7xl  font-medium mb-4">
           About Us
         </h1>
       </Banner>
