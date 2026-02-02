@@ -60,6 +60,31 @@ export const about = [
   "Learning for better decisions",
 ];
 
+export const aboutOtherInfo = [
+  {
+    title: "Mission",
+    content:
+      "To provide high-quality MEL, research, analytical and strategic consulting services that empower organizations to design, implement, and scale interventions backed by strong evidence and actionable insights",
+    image: "/mission.png",
+  },
+  {
+    title: "Vision",
+    content:
+      "To be your trusted partner for hig quality data, evidence-driven decision-making, clarity, strategy, and measurable impact.",
+    image: "/vision.png",
+  },
+  {
+    title: "Core Values",
+    content: "Results that move systems, not just dashboards.",
+    image: "/values.png",
+  },
+  {
+    title: "Our Advantage",
+    content: "EXPEREINCE | INSIGHT DRIVEN",
+    image: "/advantages.png",
+  },
+];
+
 export const servicesPage = [
   {
     id: 1,

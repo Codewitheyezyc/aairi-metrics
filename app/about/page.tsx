@@ -1,7 +1,7 @@
 import Banner from "@/components/Banner";
 import Reveal from "@/components/Reveal";
 import SectionContainer from "@/components/SectionContainer";
-import { commitment } from "@/constants";
+import { aboutOtherInfo, commitment } from "@/constants";
 
 import Image from "next/image";
 
@@ -109,7 +109,34 @@ const page = () => {
           </Reveal>
         </div>
 
-        <div className="text-center mt-10 md:mt-36 bg-[#0a2540] text-slate-200 px-2 py-4 md:p-6 rounded-2xl">
+        <Reveal direction="up" delay={150}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-30 md:mt-36">
+            {aboutOtherInfo.map((item, index) => (
+              <div
+                key={index}
+                className="p-6 bg-[#bad1e6]/10 shadow-lg rounded-2xl"
+              >
+                <Image
+                  src={item.image}
+                  width={200}
+                  height={200}
+                  priority
+                  alt={item.title}
+                  className="object-cover p-4"
+                />
+
+                <div className="">
+                  <p className="text-2xl mb-4 md:text-4xl font-medium">
+                    {item.title}
+                  </p>
+                  <p className="text-sm md:text-[16px]">{item.content}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+
+        <div className="text-center mt-30 md:mt-36 bg-[#0a2540] text-slate-200 px-2 py-4 md:p-6 rounded-2xl">
           <h3 className="text-sm md:text-2xl mb-4 font-medium">
             Our Commitment
           </h3>
