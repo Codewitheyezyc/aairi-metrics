@@ -5,12 +5,41 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import clsx from "clsx";
 
 const Navbar = () => {
   const [isMobileActive, setIsMobileActive] = useState(true);
+
+  const [hidden, setHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        // scrolling down
+        setHidden(true);
+      } else {
+        // scrolling up
+        setHidden(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <nav className=" fixed top-0 w-full z-50 transition-all duration-300 bg-slate-100/20 backdrop-blur-sm">
+    <nav
+      className={clsx(
+        "fixed top-0 w-full z-50 transition-all duration-300 bg-slate-100/20 backdrop-blur-sm",
+        hidden ? "-translate-y-full" : "translate-y-0",
+      )}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           <div className="">
