@@ -26,9 +26,9 @@ import gallery13 from "@/public/gallery13.png";
 import gallery14 from "@/public/gallery14.png";
 
 import aboutBanner from "@/public/aboutUs.png";
-import servicesBanner from "@/public/services.png";
-import projectsBanner from "@/public/projects.png";
-import contactBanner from "@/public/contact.png";
+import servicesBanner from "@/public/ourServices.png";
+import projectsBanner from "@/public/ourProjects.png";
+import contactBanner from "@/public/contactUs.png";
 
 export const navLinks = [
   {
