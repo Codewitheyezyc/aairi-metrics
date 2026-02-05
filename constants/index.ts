@@ -25,10 +25,10 @@ import gallery12 from "@/public/gallery12.png";
 import gallery13 from "@/public/gallery13.png";
 import gallery14 from "@/public/gallery14.png";
 
-import aboutBanner from "@/public/about.png";
+import aboutBanner from "@/public/aboutUs.png";
 import servicesBanner from "@/public/services.png";
-import projectsBanner from "@/public/project.png";
-import contactBanner from "@/public/Contact.png";
+import projectsBanner from "@/public/projects.png";
+import contactBanner from "@/public/contact.png";
 
 export const navLinks = [
   {
@@ -60,28 +60,79 @@ export const about = [
   "Learning for better decisions",
 ];
 
-export const aboutOtherInfo = [
+type AboutProp =
+  | {
+      title: string;
+      type: "paragraph";
+      content: string;
+      image: string;
+    }
+  | {
+      title: string;
+      type: "paragraph";
+      content: string;
+      image: string;
+    }
+  | {
+      title: string;
+      type: "complex";
+      content: { name: string; content: string }[];
+      image: string;
+    }
+  | {
+      title: string;
+      type: "list";
+      content: string[];
+      image: string;
+    };
+
+export const aboutOtherInfo: AboutProp[] = [
   {
     title: "Mission",
+    type: "paragraph",
     content:
       "To provide high-quality MEL, research, analytical and strategic consulting services that empower organizations to design, implement, and scale interventions backed by strong evidence and actionable insights",
     image: "/mission.png",
   },
   {
     title: "Vision",
+    type: "paragraph",
     content:
-      "To be your trusted partner for hig quality data, evidence-driven decision-making, clarity, strategy, and measurable impact.",
+      "To be your trusted partner for high quality data, evidence-driven decision-making, clarity, strategy, and measurable impact.",
     image: "/vision.png",
   },
   {
     title: "Core Values",
-    content: "Results that move systems, not just dashboards.",
+    type: "complex",
+    content: [
+      {
+        name: "Integrity",
+        content: "Always evidence-first.",
+      },
+      {
+        name: "Clarity",
+        content: "Data simplified into decision-ready insights.",
+      },
+      {
+        name: "Excellence",
+        content: "High-quality analytics, every time.",
+      },
+      {
+        name: "Innovation",
+        content: " Modern tools, smarter approaches.",
+      },
+      {
+        name: "Impact",
+        content: "Results that move systems, not just dashboards.",
+      },
+    ],
     image: "/values.png",
   },
   {
     title: "Our Advantage",
-    content: "EXPEREINCE | INSIGHT DRIVEN",
-    image: "/advantages.png",
+    type: "list",
+    content: ["Experience", "Insight Driven"],
+    image: "/Advantage.png",
   },
 ];
 
@@ -167,7 +218,7 @@ export const projects = [
     subTopic: "Independent Research & Data Collection Assignment",
     message:
       "Aairi-Metrics supported a climate resilience and agricultural systems assessment in semi-arid communities in Plateau State, focusing on how climate change affects agricultural productivity, access to inputs, and adaptation practices among smallholder farmers.",
-    img: "/project1.png",
+    img: "/project-image1.png",
   },
   {
     topic:

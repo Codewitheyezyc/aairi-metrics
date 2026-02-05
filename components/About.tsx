@@ -13,12 +13,12 @@ const About = () => {
     <SectionContainer className="bg-[#ebf8fe]/20">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-10 md:gap-32 lg:gap-40">
         <Image
-          src="/about-image.png"
-          width={1000}
-          height={1000}
+          src="/about-company.png"
+          width={700}
+          height={700}
           alt="About image"
           quality={80}
-          className="object-cover rounded-4xl"
+          className="object-cover rounded-4xl justify-self-end"
         />
 
         <div className=" mt-12">

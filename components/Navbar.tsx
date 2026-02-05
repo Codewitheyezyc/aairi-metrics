@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "fixed top-0 w-full z-50 transition-all duration-300 bg-slate-100/20 backdrop-blur-sm",
+        "fixed top-0 w-full z-50 transition-all duration-300 bg-white",
         hidden ? "-translate-y-full" : "translate-y-0",
       )}
     >

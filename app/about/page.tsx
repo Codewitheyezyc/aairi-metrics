@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import Reveal from "@/components/Reveal";
 import SectionContainer from "@/components/SectionContainer";
 import { aboutOtherInfo, commitment } from "@/constants";
+import { CheckCircle } from "lucide-react";
 
 import Image from "next/image";
 
@@ -38,7 +39,7 @@ const page = () => {
           <Reveal direction="up" delay={150}>
             <div className="">
               <Image
-                src="/about3.svg"
+                src="/about1.png"
                 width={3000}
                 height={3000}
                 alt="About Image"
@@ -78,11 +79,11 @@ const page = () => {
             </Reveal>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2  items-center gap-20 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2  items-center gap-20 mt-10 lg:-mt-30">
           <div className="">
             <Reveal direction="up" delay={150}>
               <Image
-                src="/about2.svg"
+                src="/about2.png"
                 width={3000}
                 height={3000}
                 alt="About Image"
@@ -110,26 +111,53 @@ const page = () => {
         </div>
 
         <Reveal direction="up" delay={150}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-30 md:mt-36">
+          <div className=" mt-30 md:mt-36 flex flex-col gap-20">
             {aboutOtherInfo.map((item, index) => (
               <div
                 key={index}
-                className="p-6 bg-[#bad1e6]/10 shadow-lg rounded-2xl"
+                className={`p-6 bg-[#bad1e6]/10 shadow-lg rounded-2xl  grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-20 ${index % 2 === 0 ? "bg-[#cdd0e8]" : "bg-[#d1e0ee]"}`}
               >
-                <Image
-                  src={item.image}
-                  width={200}
-                  height={200}
-                  priority
-                  alt={item.title}
-                  className="object-cover p-4"
-                />
+                <div className="relative w-full h-75 lg:h-100 ">
+                  <Image
+                    src={item.image}
+                    fill
+                    priority
+                    alt={item.title}
+                    className="object-cover  rounded-2xl"
+                  />
+                </div>
 
                 <div className="">
                   <p className="text-2xl mb-4 md:text-4xl font-medium">
                     {item.title}
                   </p>
-                  <p className="text-sm md:text-[16px]">{item.content}</p>
+                  {item.type === "paragraph" && <p>{item.content}</p>}
+                  {item.type === "list" && (
+                    <ul>
+                      {item.content.map((item, index) => (
+                        <li key={index} className="flex items-center gap-4">
+                          <CheckCircle className="text-[#1864ab] w-4" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {item.type === "complex" && (
+                    <ul className="">
+                      {item.content.map((item, index) => (
+                        <li key={index} className="flex items-center  gap-4">
+                          <CheckCircle className="text-[#1864ab] w-4 mt-1 shrink-0" />
+                          <div className="grid grid-cols-[80px_1fr] items-center gap-6">
+                            <span className="font-medium text-base">
+                              {item.name}
+                            </span>
+
+                            <span className="text-sm">{item.content}</span>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             ))}
