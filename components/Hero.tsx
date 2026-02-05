@@ -13,7 +13,7 @@ const Hero = () => {
         alt="Hero Background"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/70" />
       <div
         className={`max-w-7xl mx-auto px-4 md:px-8 h-full w-full flex items-center justify-center mt-20 lg:mt-10 z-10 min-h-screen `}
       >

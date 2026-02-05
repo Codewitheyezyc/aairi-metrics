@@ -17,7 +17,7 @@ const Banner = ({ children, variant }: BannerProp) => {
         priority
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-[#0a2540]/90"></div>
+      <div className="absolute inset-0 bg-[#0a2540]/70"></div>
       <div className="py-6 px-6 md:py-10 md:px-10 bg-[#0a2540] text-slate-200">
         <div className="max-w-7xl mx-auto pt-20 relative z-10 h-80">
           {children}

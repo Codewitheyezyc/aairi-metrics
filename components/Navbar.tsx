@@ -7,9 +7,11 @@ import Button from "./Button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isMobileActive, setIsMobileActive] = useState(true);
+  const pathname = usePathname();
 
   const [hidden, setHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -55,7 +57,16 @@ const Navbar = () => {
           </div>
           <ul className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
-              <Link href={link.url} key={link.title}>
+              <Link
+                href={link.url}
+                key={link.title}
+                className={clsx(
+                  "text-sm font-medium transition-colors",
+                  pathname === link.url
+                    ? " border-b-2 border-[#1864ab] text-[#1864ab]"
+                    : "text-gray-500 hover:text-[#1864ab]",
+                )}
+              >
                 <li>{link.title}</li>
               </Link>
             ))}
@@ -89,6 +100,12 @@ const Navbar = () => {
               href={link.url}
               onClick={() => setIsMobileActive(true)}
               key={link.title}
+              className={clsx(
+                "text-sm font-medium transition-colors",
+                pathname === link.url
+                  ? "  text-[#1864ab]"
+                  : "text-gray-500 hover:text-[#1864ab]",
+              )}
             >
               <li>{link.title}</li>
             </Link>

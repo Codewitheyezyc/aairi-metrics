@@ -218,7 +218,7 @@ export const projects = [
     subTopic: "Independent Research & Data Collection Assignment",
     message:
       "Aairi-Metrics supported a climate resilience and agricultural systems assessment in semi-arid communities in Plateau State, focusing on how climate change affects agricultural productivity, access to inputs, and adaptation practices among smallholder farmers.",
-    img: "/project-image1.png",
+    img: "/project2.png",
   },
   {
     topic:
@@ -226,7 +226,7 @@ export const projects = [
     subTopic: "Independent Monitoring & Field Coordination Assignment",
     message:
       "Aairi-Metrics provided field monitoring and coordination support for a maternal and child health service delivery initiative focused on Vitamin A supplementation and nutrition services for women and children under five.",
-    img: "/project2.png",
+    img: "/project-image1.png",
   },
 ];
 
